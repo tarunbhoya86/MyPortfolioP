@@ -32,7 +32,7 @@ const css = `
 .projects-section {
   position: relative;
   overflow: hidden;
-  padding: 100px 7%;
+  padding: 50px 7% 55px;
   background: #080811;
   color: #f8fafc;
   font-family: Arial, sans-serif;
@@ -69,7 +69,7 @@ const css = `
   z-index: 1;
   text-align: center;
   max-width: 700px;
-  margin: 0 auto 55px;
+  margin: 0 auto 32px;
 }
 
 .projects-tag {
@@ -336,7 +336,7 @@ const css = `
 
 @media (max-width: 800px) {
   .projects-section {
-    padding: 75px 5%;
+    padding: 35px 20px 40px;
   }
 
   .projects-grid {
@@ -351,7 +351,7 @@ const css = `
 
 @media (max-width: 420px) {
   .projects-section {
-    padding: 60px 16px;
+    padding: 30px 16px 35px;
   }
 
   .project-card-top {

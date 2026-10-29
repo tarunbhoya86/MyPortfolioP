@@ -1,12 +1,12 @@
 .home {
   position: relative;
   isolation: isolate;
-  min-height: 88vh;
+  min-height: auto;
   display: flex;
   align-items: center;
   justify-content: space-between;
   gap: 50px;
-  padding: 80px 8%;
+  padding: 55px 8% 40px;
   overflow: hidden;
   background:
     radial-gradient(ellipse at 80% 50%, #12304b55, transparent 50%),
@@ -345,8 +345,8 @@
 /* Tablet & Mobile Responsiveness */
 @media (max-width: 992px) {
   .home {
-    padding: 70px 6%;
-    gap: 35px;
+    padding: 45px 6% 35px;
+    gap: 30px;
   }
 
   .profile-area {
@@ -380,8 +380,8 @@
     flex-direction: column;
     align-items: center;
     text-align: center;
-    padding: 35px 20px 55px;
-    gap: 25px;
+    padding: 25px 20px 30px;
+    gap: 20px;
   }
 
   /* Logo / profile circle at the top */
@@ -500,8 +500,8 @@
 
 @media (max-width: 440px) {
   .home {
-    padding: 40px 16px 50px;
-    gap: 32px;
+    padding: 20px 16px 25px;
+    gap: 16px;
   }
 
   .home-buttons {
