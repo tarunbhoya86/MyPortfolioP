@@ -1,6 +1,4 @@
 
-import { useState } from "react";
-
 const projects = [
   {
     number: "01",
@@ -384,8 +382,6 @@ const css = `
 `;
 
 function Projects() {
-  const [activeProject, setActiveProject] = useState(null);
-
   return (
     <>
       <style>{css}</style>

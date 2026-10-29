@@ -1,16 +1,15 @@
-
 .home {
   position: relative;
   isolation: isolate;
-  min-height: 85vh;
+  min-height: 88vh;
   display: flex;
   align-items: center;
   justify-content: space-between;
   gap: 50px;
-  padding: 80px 10%;
+  padding: 80px 8%;
   overflow: hidden;
   background:
-    radial-gradient(ellipse at 80% 50%, #12304b55, transparent 45%),
+    radial-gradient(ellipse at 80% 50%, #12304b55, transparent 50%),
     #0b1120;
 }
 
@@ -20,32 +19,33 @@
   z-index: -1;
   width: 400px;
   height: 400px;
-  top: -220px;
+  top: -200px;
   left: -150px;
   border-radius: 50%;
   background: #0ea5e9;
   filter: blur(160px);
   opacity: 0.2;
+  pointer-events: none;
 }
 
 /* Left content */
 .home-content {
   flex: 1;
-  max-width: 650px;
-  animation: slideInLeft 0.9s ease both;
+  max-width: 620px;
+  animation: slideInLeft 0.8s ease both;
 }
 
 .welcome-badge {
   display: inline-flex;
   align-items: center;
   gap: 10px;
-  padding: 10px 15px;
+  padding: 8px 16px;
   border: 1px solid #334155;
   background: #111827;
   color: #cbd5e1;
   border-radius: 30px;
   font-size: 13px;
-  margin-bottom: 28px;
+  margin-bottom: 24px;
 }
 
 .online-dot {
@@ -53,24 +53,24 @@
   height: 8px;
   border-radius: 50%;
   background: #38bdf8;
-  box-shadow: 0 0 12px #38bdf8;
+  box-shadow: 0 0 10px #38bdf8;
   animation: pulse 1.8s infinite;
 }
 
 .home-greeting {
   color: #38bdf8;
-  font-size: 15px;
-  font-weight: bold;
-  letter-spacing: 5px;
+  font-size: 14px;
+  font-weight: 700;
+  letter-spacing: 4px;
   margin-bottom: 12px;
 }
 
 .home-name {
   color: #f8fafc;
-  font-size: clamp(42px, 5vw, 70px);
+  font-size: clamp(38px, 5.5vw, 68px);
   line-height: 1.15;
-  margin: 0 0 18px;
-  letter-spacing: -2px;
+  margin: 0 0 16px;
+  letter-spacing: -1.5px;
 }
 
 .home-name span {
@@ -82,48 +82,50 @@
 }
 
 .home-role {
-  font-size: clamp(18px, 2vw, 25px);
+  font-size: clamp(18px, 2.2vw, 24px);
   color: #e2e8f0;
-  line-height: 1.5;
-  margin-bottom: 20px;
+  line-height: 1.4;
+  margin-bottom: 18px;
+  font-weight: 600;
 }
 
 .home-role span {
   color: #38bdf8;
-  margin: 0 5px;
+  margin: 0 6px;
 }
 
 .home-description {
-  max-width: 570px;
+  max-width: 540px;
   color: #94a3b8;
-  line-height: 1.9;
+  line-height: 1.8;
   font-size: 16px;
-  margin-bottom: 30px;
+  margin-bottom: 28px;
 }
 
 .home-buttons {
   display: flex;
   flex-wrap: wrap;
-  gap: 15px;
+  gap: 14px;
 }
 
 .home .btn {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  gap: 10px;
-  padding: 14px 21px;
-  border-radius: 8px;
+  gap: 8px;
+  padding: 13px 22px;
+  border-radius: 9px;
   background: linear-gradient(100deg, #38bdf8, #818cf8);
   color: #07111f;
   text-decoration: none;
-  font-weight: bold;
-  transition: transform 0.3s, box-shadow 0.3s;
+  font-weight: 700;
+  font-size: 15px;
+  transition: transform 0.25s, box-shadow 0.25s;
 }
 
 .home .btn:hover {
-  transform: translateY(-4px);
-  box-shadow: 0 10px 30px #38bdf844;
+  transform: translateY(-3px);
+  box-shadow: 0 8px 25px rgba(56, 189, 248, 0.35);
 }
 
 .home .btn-outline {
@@ -135,19 +137,21 @@
 .home .btn-outline:hover {
   border-color: #38bdf8;
   background: #111827;
+  color: #38bdf8;
 }
 
 .home-socials {
   display: flex;
-  gap: 25px;
-  margin-top: 35px;
+  gap: 22px;
+  margin-top: 30px;
 }
 
 .home-socials a {
   color: #94a3b8;
   text-decoration: none;
   font-size: 14px;
-  transition: color 0.3s;
+  font-weight: 500;
+  transition: color 0.25s;
 }
 
 .home-socials a:hover {
@@ -157,12 +161,12 @@
 /* Right profile area */
 .profile-area {
   position: relative;
-  flex: 0 0 390px;
-  height: 430px;
+  flex: 0 0 380px;
+  height: 420px;
   display: flex;
   align-items: center;
   justify-content: center;
-  animation: fadeIn 1.2s ease both;
+  animation: fadeIn 1s ease both;
 }
 
 .profile-glow {
@@ -172,29 +176,32 @@
   background: #0ea5e9;
   filter: blur(100px);
   opacity: 0.25;
+  pointer-events: none;
 }
 
 .profile-circle {
-  width: 300px;
-  height: 300px;
+  width: 280px;
+  height: 280px;
   flex-shrink: 0;
   border-radius: 50%;
-  border: 5px solid #38bdf8;
-  box-shadow: 0 0 35px #38bdf855;
+  border: 4px solid #38bdf8;
+  box-shadow: 0 0 35px rgba(56, 189, 248, 0.3);
   background: #111827;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  gap: 12px;
+  gap: 10px;
   text-align: center;
+  position: relative;
+  z-index: 2;
 }
 
 .profile-initials {
-  font-family: Arial, sans-serif;
-  font-size: 100px;
+  font-family: inherit;
+  font-size: 90px;
   font-weight: 900;
-  letter-spacing: 4px;
+  letter-spacing: 2px;
   line-height: 1;
   background: linear-gradient(135deg, #38bdf8, #a855f7);
   -webkit-background-clip: text;
@@ -204,38 +211,17 @@
 
 .profile-caption {
   color: #94a3b8;
-  font-size: 14px;
-  letter-spacing: 4px;
-  font-weight: 600;
-}
-
-@media (max-width: 700px) {
-  .profile-circle {
-    width: 220px;
-    height: 220px;
-  }
-
-  .profile-initials {
-    font-size: 70px;
-  }
-
-  .profile-caption {
-    font-size: 11px;
-    letter-spacing: 2px;
-  }
-}
-.profile-caption {
-  color: #94a3b8;
-  font-size: 10px;
+  font-size: 12px;
   letter-spacing: 3px;
-  margin-top: 10px;
+  font-weight: 700;
 }
 
 /* Rotating rings */
 .orbit {
   position: absolute;
-  border: 1px solid #38bdf844;
+  border: 1px solid rgba(56, 189, 248, 0.25);
   border-radius: 50%;
+  pointer-events: none;
 }
 
 .orbit-one {
@@ -245,10 +231,10 @@
 }
 
 .orbit-two {
-  width: 375px;
-  height: 375px;
+  width: 370px;
+  height: 370px;
   border-style: dashed;
-  border-color: #818cf833;
+  border-color: rgba(129, 140, 248, 0.2);
   animation: rotateOrbit 28s linear infinite reverse;
 }
 
@@ -258,69 +244,68 @@
   z-index: 3;
   display: flex;
   align-items: center;
-  gap: 12px;
-  padding: 13px 16px;
+  gap: 10px;
+  padding: 10px 14px;
   border: 1px solid #334155;
-  background: #111827ee;
+  background: rgba(17, 24, 39, 0.92);
+  backdrop-filter: blur(8px);
   border-radius: 12px;
-  box-shadow: 0 12px 35px #00000044;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
   animation: float 4s ease-in-out infinite;
 }
 
 .floating-card > span {
-  font-size: 26px;
-}
-
-.floating-card strong,
-.floating-card small {
-  display: block;
+  font-size: 22px;
 }
 
 .floating-card strong {
+  display: block;
   color: #f8fafc;
-  font-size: 13px;
+  font-size: 12px;
 }
 
 .floating-card small {
+  display: block;
   color: #94a3b8;
-  margin-top: 4px;
-  font-size: 11px;
+  font-size: 10px;
+  margin-top: 2px;
 }
 
 .card-react {
-  top: 45px;
+  top: 35px;
   right: -5px;
 }
 
 .card-code {
-  bottom: 45px;
-  left: -10px;
+  bottom: 35px;
+  left: -5px;
   animation-delay: -2s;
 }
 
 .floating-tech {
   position: absolute;
-  z-index: 4;
-  width: 43px;
-  height: 43px;
+  z-index: 3;
+  width: 38px;
+  height: 38px;
   display: grid;
   place-items: center;
-  border-radius: 12px;
+  border-radius: 10px;
   background: #17243a;
   border: 1px solid #334155;
-  font-weight: bold;
+  font-weight: 700;
+  font-size: 12px;
   animation: float 3s ease-in-out infinite;
 }
 
 .tech-js {
   color: #facc15;
-  top: 85px;
+  top: 75px;
   left: 10px;
 }
 
 .tech-css {
   color: #38bdf8;
-  bottom: 85px;
+  bottom: 75px;
   right: 15px;
   animation-delay: -1.5s;
 }
@@ -329,7 +314,7 @@
 @keyframes slideInLeft {
   from {
     opacity: 0;
-    transform: translateX(-35px);
+    transform: translateX(-30px);
   }
   to {
     opacity: 1;
@@ -344,7 +329,7 @@
 
 @keyframes float {
   0%, 100% { transform: translateY(0); }
-  50% { transform: translateY(-12px); }
+  50% { transform: translateY(-8px); }
 }
 
 @keyframes rotateOrbit {
@@ -357,73 +342,229 @@
   50% { opacity: 0.4; }
 }
 
-/* Responsive design */
-@media (max-width: 1000px) {
+/* Tablet & Mobile Responsiveness */
+@media (max-width: 992px) {
   .home {
-    padding: 65px 6%;
-    gap: 20px;
+    padding: 70px 6%;
+    gap: 35px;
   }
 
   .profile-area {
-    flex-basis: 330px;
-    transform: scale(0.9);
+    flex: 0 0 320px;
+    height: 360px;
+  }
+
+  .profile-circle {
+    width: 240px;
+    height: 240px;
+  }
+
+  .profile-initials {
+    font-size: 75px;
+  }
+
+  .orbit-one {
+    width: 280px;
+    height: 280px;
+  }
+
+  .orbit-two {
+    width: 320px;
+    height: 320px;
   }
 }
 
-@media (max-width: 760px) {
+@media (max-width: 768px) {
   .home {
     min-height: auto;
     flex-direction: column;
-    align-items: flex-start;
-    padding: 65px 7%;
-    gap: 30px;
+    align-items: center;
+    text-align: center;
+    padding: 50px 20px 60px;
+    gap: 40px;
   }
 
   .home-content {
-    width: 100%;
+    max-width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .welcome-badge {
+    margin-bottom: 20px;
+  }
+
+  .home-greeting {
+    letter-spacing: 3px;
   }
 
   .home-name {
-    letter-spacing: -1px;
+    letter-spacing: -0.5px;
+    margin-bottom: 12px;
   }
 
+  .home-description {
+    font-size: 15px;
+    line-height: 1.7;
+    margin-bottom: 24px;
+  }
+
+  .home-buttons {
+    justify-content: center;
+    width: 100%;
+  }
+
+  .home-socials {
+    justify-content: center;
+    margin-top: 25px;
+  }
+
+  /* Profile area centered, no overflow */
   .profile-area {
-    align-self: center;
     flex: none;
     width: 100%;
-    max-width: 390px;
-    height: 370px;
-    transform: scale(0.9);
-    transform-origin: top center;
-    margin-bottom: -20px;
+    max-width: 320px;
+    height: 320px;
+    margin: 10px auto 0;
+  }
+
+  .profile-circle {
+    width: 210px;
+    height: 210px;
+    gap: 8px;
+  }
+
+  .profile-initials {
+    font-size: 65px;
+  }
+
+  .profile-caption {
+    font-size: 11px;
+    letter-spacing: 2px;
+  }
+
+  .orbit-one {
+    width: 250px;
+    height: 250px;
+  }
+
+  .orbit-two {
+    width: 290px;
+    height: 290px;
+  }
+
+  .floating-card {
+    padding: 8px 12px;
+    gap: 8px;
+  }
+
+  .floating-card > span {
+    font-size: 18px;
+  }
+
+  .floating-card strong {
+    font-size: 11px;
+  }
+
+  .floating-card small {
+    font-size: 9px;
+  }
+
+  .card-react {
+    top: 15px;
+    right: 5px;
+  }
+
+  .card-code {
+    bottom: 15px;
+    left: 5px;
+  }
+
+  .floating-tech {
+    width: 32px;
+    height: 32px;
+    font-size: 11px;
+  }
+
+  .tech-js {
+    top: 60px;
+    left: 10px;
+  }
+
+  .tech-css {
+    bottom: 60px;
+    right: 10px;
   }
 }
 
-@media (max-width: 420px) {
-  .profile-area {
-    transform: scale(0.78);
-    transform-origin: top left;
-    width: 125%;
-    margin-bottom: -65px;
+@media (max-width: 440px) {
+  .home {
+    padding: 40px 16px 50px;
+    gap: 32px;
   }
 
   .home-buttons {
     flex-direction: column;
-    align-items: stretch;
+    width: 100%;
+    max-width: 300px;
   }
 
-  .home-socials {
-    gap: 18px;
+  .home .btn {
+    width: 100%;
+  }
+
+  .profile-area {
+    max-width: 280px;
+    height: 280px;
+  }
+
+  .profile-circle {
+    width: 180px;
+    height: 180px;
+  }
+
+  .profile-initials {
+    font-size: 55px;
+  }
+
+  .orbit-one {
+    width: 220px;
+    height: 220px;
+  }
+
+  .orbit-two {
+    width: 260px;
+    height: 260px;
+  }
+
+  .card-react {
+    top: 10px;
+    right: 0;
+  }
+
+  .card-code {
+    bottom: 10px;
+    left: 0;
+  }
+
+  .tech-js {
+    top: 50px;
+    left: 5px;
+  }
+
+  .tech-css {
+    bottom: 50px;
+    right: 5px;
   }
 }
 
-/* Respect reduced-motion preferences */
+/* Reduced motion */
 @media (prefers-reduced-motion: reduce) {
   .home *,
   .home *::before,
   .home *::after {
     animation: none !important;
-    scroll-behavior: auto !important;
     transition: none !important;
   }
 }
